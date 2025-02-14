@@ -1,5 +1,3 @@
---/ By Conso1e Telegram channel
-
 local sounds = {}
 local currentSound = nil
 
