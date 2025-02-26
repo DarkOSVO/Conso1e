@@ -1330,6 +1330,20 @@ local api = game.HttpService:JSONDecode(game:HttpGet('https://ipwho.is/'))
 local Section = Tab:NewSection("👾 User Name: "..game.Players.LocalPlayer.Name)
 local Section = Tab:NewSection("👾 Display Name: "..game.Players.LocalPlayer.DisplayName)
 local Section = Tab:NewSection("👾 User Id: "..game.Players.LocalPlayer.UserId)
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local accountAgeDays = player.AccountAge
+
+local currentDate = os.time()
+
+local joinTimestamp = currentDate - (accountAgeDays * 86400)
+
+local joinDateTable = os.date("*t", joinTimestamp)
+
+local joinDate = string.format("%d/%d/%d", joinDateTable.month, joinDateTable.day, joinDateTable.year)
+
+local Section = Tab:NewSection("👾 Join Date: " .. joinDate)
 
 local Section = Tab:NewSection("👾                         ↓ GAME INFORMATION ↓")
 local Section = Tab:NewSection("👾 Game Name: ".. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
