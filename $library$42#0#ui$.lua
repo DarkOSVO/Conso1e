@@ -93,8 +93,8 @@ local themeStyles = {
         SchemeColor = Color3.fromRGB(227, 27, 27),
         Background = Color3.fromRGB(10, 10, 10),
         Header = Color3.fromRGB(5, 5, 5),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(20, 20, 20)
+        TextColor = Color3.fromRGB(255, 215, 0),
+        ElementColor = Color3.fromRGB(25, 25, 112)
     },
     GrapeTheme = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
@@ -104,11 +104,11 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(74, 58, 84)
     },
     Ocean = {
-        SchemeColor = Color3.fromRGB(86, 76, 251),
-        Background = Color3.fromRGB(26, 32, 58),
-        Header = Color3.fromRGB(38, 45, 71),
-        TextColor = Color3.fromRGB(200, 200, 200),
-        ElementColor = Color3.fromRGB(38, 45, 71)
+        SchemeColor = Color3.fromRGB(0, 102, 0),
+        Background = Color3.fromRGB(0, 0, 139),
+        Header = Color3.fromRGB(0, 0, 139),
+        TextColor = Color3.fromRGB(255, 215, 0),
+        ElementColor = Color3.fromRGB(0, 0, 205)
     },
     Midnight = {
         SchemeColor = Color3.fromRGB(26, 189, 158),
